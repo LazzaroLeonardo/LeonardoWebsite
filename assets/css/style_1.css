@@ -1,5 +1,12 @@
-* {
-    background-image: url(../images/wallpaper1.jpg);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
@@ -8,6 +15,60 @@ h1 {
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
 }
 
 input {
@@ -46,7 +107,7 @@ textarea:focus-within {
 }
 
 button {
-    background-color: #5bd183;
+    background-color: lightgrey;
     border-radius: 20px;
     border-color: black;
     font-size: 22px;
@@ -61,30 +122,17 @@ button:hover {
     cursor: pointer;
 }
 
-.button_1:link,                 
-.button_1:visited {             
-  display: block;             
-  text-decoration: none;      
-  color:black;                
-  background-color:red;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 200px;
-  font-size: 20px;
-  margin: 20px auto;
-}
-  
-.button_1:hover,
-.button_1:visited:hover {
-  color: #FFF;
-  background-color:gray; 
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
 }
 
-.button_1:active,
-.button_1:visited:active {
-  color: #FFF;
-  background-color: #5995DA; 
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
 }

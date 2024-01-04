@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Leonardo Lazzaro Website</title>
+    <title>LeonardoSitoWeb</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,9 +14,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lazzaroleonardo.github.io/LeonardoWebsite/" />
-    <meta property="og:title" content="Leonardo Lazzaro sito web." />
-    <meta property="og:description" content="Sito web portfolio." />
+    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
     <meta property="og:image" content="https://lazzaroleonardo.github.io/LeonardoWebsite/assets/images/meta.png" />
+  
 </head>
 
 <body>
@@ -26,38 +27,35 @@
     alle varie altre pagine del mio sito web
     I start with the nav which is where I go to insert my logo and a menu that will bring
      to the various other pages on my website-->
-    <nav>
-        <!--Inserisco qui il mio logo
-        I insert my logo here-->
-        <div class="nav-logo">
-            <a href="#">
-            <img src="assets/images/logo.png">
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li class="link"><a href="cv/index.html" target="_blank">My-Cv</a></li>
-            <li id="link1" class="link"><a href="portfolio/index.html" target="_blank">My-Works</a></li>
-            <li id="link2" class="link"><a href="form/index.html" target="_blank">Contact-me</a></li>
-            <li id="link3" class="link"><a href="https://github.com/LazzaroLeonardo" target="_blank">My-Github</a></li>
+     <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="cv/index.html" target="_blank">Cv</a></li>
+            <li><a href="portfolio/index.html" target="_blank">Portfolio</a></li>
+            <li><a href="form/index.html">Contattami</a></li>
+            <li><a href="https://github.com/LazzaroLeonardo" target="_blank">Github</a></li>
         </ul>
-        <!--Ora vado a creare un menu a tendina che 
-        funziona sia da pc che su smartphone
-        Now I'm going to create a drop down menu that
-         It works from both PC and smartphone-->
-        <ul class='menu'>
-            <li class='dropdown'><span>Menu &#9662;
-            <ul class='features-menu'>           
-            <li><a href="cv/index.html" target="_blank">My-Cv</a></li>
-            <li><a href="portfolio/index.html" target="_blank">My-Works</a></li>
-            <li><a href="form/index.html" target="_blank">Contact-me</a></li>
-            <li><a href="https://github.com/LazzaroLeonardo" target="_blank">My-Github</a></li>
-            </ul>                               
-            </li>
+        <ul>
+            <li><a href="#">LeonardoSitoWeb</a></li>
+            <li class="hideOnMobile"><a href="cv/index.html" target="_blank">Cv</a></li>
+            <li class="hideOnMobile"><a href="portfolio/index.html" target="_blank">Portfolio</a></li>
+            <li class="hideOnMobile"><a href="form/index.html" target="_blank">Contattami</a></li>
+            <li class="hideOnMobile"><a href="https://github.com/LazzaroLeonardo" target="_blank">Github</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
-        <!--Finito il nav
-        Finished the navigation-->
     </nav>
-
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex"
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none"
+        }
+    </script>
+    <!--Finito il nav
+    Finished the navigation-->
     <header class="container">
         <!--In header vado ad inserire una mia foto e il titolo della pagina
         In the header I am going to insert a photo of myself and the title of the page-->
@@ -95,18 +93,18 @@
         <!--Inizio con gli interessi
         I'll start with interest-->  
         <div class="about interest">
-            <h2 class="title2">interest</h2>
+            <h2 class="title2">interessi</h2>
                 <ul>
-                <li><i class="fa fa-car" aria-hidden="true"></i><p>car</p></li>
+                <li><i class="fa fa-car" aria-hidden="true"></i><p>auto</p></li>
                 <li><i class="fa fa-film" aria-hidden="true"></i></i><p>film</p></li>
-                <li><i class="fa fa-gamepad" aria-hidden="true"></i><p>gaming</p></li>
-                <li><i class="fa fa-book" aria-hidden="true"></i><p>comics</p></li>
+                <li><i class="fa fa-gamepad" aria-hidden="true"></i><p>giocare</p></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><p>fumetti</p></li>
                 </ul>
             </div>
         <!--Passo adesso alle mie skills
         Now let's move on to my skills-->
         <div class="about skills">
-        <h2 class="title2">professional skill</h2>
+        <h2 class="title2">skill professionali</h2>
             <div class="box">
             <h4>html</h4>
             <div class="percent">
@@ -141,7 +139,7 @@ than the pages that make up the site-->
                 <p>
                     Da qui si può vedere il mio Curriculum con le mie referenze e esperienze.
                 </p>
-                <a href="cv/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
+                <a href="Cv/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card_1">
                 <span><i class="ri-bug-line"></i></span>
@@ -150,15 +148,15 @@ than the pages that make up the site-->
                     Da qui si può vedere la pagina del mio portfolio di progetti con il
                     collegamento agli stessi.
                 </p>
-                <a href="portfolio/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
+                <a href="Portfolio/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card_2">
                 <span><i class="ri-history-line"></i></span>
-                <h4>Contact-me</h4>
+                <h4>Contattami</h4>
                 <p>
                     Da qui si può accedere a una form funzionante per chi fosse interessato a contattarmi.
                 </p>
-                <a href="form/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
+                <a href="Form/index.html" target="_blank">Clicca qui <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card_3">
                 <span><i class="ri-shake-hands-line"></i></span>
