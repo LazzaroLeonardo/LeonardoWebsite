@@ -1,6 +1,6 @@
 /* aggiungo degli stili al corpo del mio file. */
 body{
-    background-image: url(Immagini/wallpaper.jpg);
+    background-image: url(../../assets/images/portfolio/wallpaper.jpg);
     background-repeat: initial;   
 }
 /* Inserisco degli stili alle immagini. */
