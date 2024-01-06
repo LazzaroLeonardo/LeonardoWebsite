@@ -17,7 +17,7 @@ a{
 body{
     background-image: url(assets/images/wallpaper.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
 }
 /*Inizio a dare un qualche stile a nav
@@ -200,7 +200,7 @@ Now I'm going to style my features*/
 /*Do lo stile al primo "bottone
 I give the style to the first "button*/
 .features .card{
-    background-image: url(assets/images/image_3.png);
+    background-image: url(assets/images/small_wallpaper_1.png);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -253,7 +253,7 @@ I give the style to the first "button*/
 /*Do lo stile al secondo "bottone
 I give the style to the second "button*/
 .features .card_1{
-    background-image: url(assets/images/image_2.png);
+    background-image: url(assets/images/small_wallpaper_2.png);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -306,7 +306,7 @@ I give the style to the second "button*/
 /*Do lo stile al terzo "bottone
 I give the style to the third "button*/
 .features .card_2{
-    background-image: url(assets/images/Image_4.png);
+    background-image: url(assets/images/small_wallpaper_3.png);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -359,7 +359,7 @@ I give the style to the third "button*/
 /*Do lo stile al quarto "bottone
 I give the style to the fourth "button*/
 .features .card_3{
-    background-image: url(assets/images/image_5.png);
+    background-image: url(assets/images/small_wallpaper_4.png);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;

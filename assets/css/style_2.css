@@ -20,7 +20,7 @@ a{
 body{
   background-image: url(../images/wallpaper.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 
